@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-string USERNAME_ADMIN = "MuhammadHaykalMakhmud";
-string PASSWORD_ADMIN = "2409106005";
+string USER_ADMIN = "MuhammadHaykalMakhmud";
+string PWD_ADMIN = "2409106005";
 
 int main() {
     string username, password;
@@ -13,7 +13,7 @@ int main() {
         cin >> username;
         cout << "Masukkan Password : ";
         cin >> password;
-        if (username == USERNAME_ADMIN && password == PASSWORD_ADMIN){
+        if (username == USER_ADMIN && password == PWD_ADMIN){
             cout << "Login Berhasil" << endl;
             isLogin = true;
             break;
