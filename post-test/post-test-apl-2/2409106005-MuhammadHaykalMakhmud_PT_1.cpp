@@ -8,6 +8,7 @@ using namespace std;
 string ACCOUNT[2] = {"MuhammadHaykalMakhmud", "2409106005"};
 string keyboard[MAX_KB] = {"Keychron Q1 Max", "Noir Timeless82 v2"};
 int harga[MAX_KB]= {4195000, 1370000 };
+
 int panjang = 2;
 
 int main() {
@@ -34,12 +35,14 @@ int main() {
 
         cout << "Sistem Manajemen Mechanical Keyboard" << endl;
         do {
+            cout << "----------------------------------" << endl;
             cout << "Menu Program" << endl;
             cout << "1. Tambah Mechanical Keyboard" << endl;
             cout << "2. Tampilkan Mechanical Keyboard" << endl;
             cout << "3. Ubah Mechanical Keyboard" << endl;
             cout << "4. Hapus Mechanical Keyboard" << endl;
             cout << "5. Keluar" << endl;
+            cout << "----------------------------------" << endl;
             cout << "Pilihan: ";
             cin >> pilihan;
 
@@ -61,7 +64,7 @@ int main() {
                 case 2:
                     if (panjang == 0) {
                         cout << "Belum ada Keyboard" << endl;
-                        } else {
+                    } else {
                         
                         cout << "+-----------------------+-------------+" << endl;
                         cout << "| Keyboard              | Harga (Rp)  |" << endl;
@@ -70,6 +73,7 @@ int main() {
                         for (int i = 0; i < panjang; i++) {
                             cout << "| " << left << setw(22) << keyboard[i] << "| " << right << setw(11) << harga[i] << " |" << endl;
                         }
+
                         cout << "+-----------------------+-------------+" << endl;
                     }    
                     break;
