@@ -224,6 +224,7 @@ int main(){
                         cout << "Belum ada Keyboard" << endl;
                     }else{
                         ShowKeyboard(keyboard, panjang_keyboard);
+                        
                         cout << "Masukkan nomor keyboard yang akan dihapus: ";
                         cin >> index;
 
